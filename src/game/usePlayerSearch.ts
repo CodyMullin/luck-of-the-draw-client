@@ -23,7 +23,7 @@ export function usePlayerSearch() {
       const controller = new AbortController();
       abortRef.current = controller;
 
-      fetch(`/players/search?q=${encodeURIComponent(query)}`, {
+      fetch(`https://luck-of-the-draw-server.fly.dev/players/search?q=${encodeURIComponent(query)}`, {
         signal: controller.signal,
       })
         .then((res) => res.json())

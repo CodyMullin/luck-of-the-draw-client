@@ -67,7 +67,7 @@ function GameConnection({
     stateRef.current = initial;
     setGameState(initial);
 
-    const url = `${__WS_BASE__}/lobby/${code}/ws?name=${encodeURIComponent(playerName)}`;
+    const url = `wss://luck-of-the-draw-server.fly.dev/lobby/${code}/ws?name=${encodeURIComponent(playerName)}`;
 
     const ws = new WebSocket(url);
 

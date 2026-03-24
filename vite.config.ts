@@ -15,13 +15,11 @@ export default defineConfig({
         target: "http://localhost:3000",
         changeOrigin: true,
       },
-      "^/lobby$": {
+      "^/lobby": {
         target: "http://localhost:3000",
         changeOrigin: true,
+        ws: true,
       },
     },
-  },
-  define: {
-    __WS_BASE__: JSON.stringify("ws://localhost:3000"),
   },
 });

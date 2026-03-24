@@ -20,7 +20,7 @@ function HomePage() {
     if (!canHost) return;
     setIsCreating(true);
     try {
-      const res = await fetch("/lobby", { method: "POST" });
+      const res = await fetch(`https://luck-of-the-draw-server.fly.dev/lobby`, { method: "POST" });
       if (!res.ok) {
         toast("Failed to create lobby", "error");
         return;
