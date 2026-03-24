@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Courier New", "Courier", monospace;
+  --font-body: "Courier New", "Courier", monospace;
+
+  --color-cream: #f5f0e1;
+  --color-cream-dark: #e8dcc8;
+  --color-leather: #8b4513;
+  --color-leather-light: #a0522d;
+  --color-grass: #2d5016;
+  --color-grass-light: #3a6b1e;
+  --color-dirt: #6b4423;
+  --color-chalk: #ffffff;
+  --color-scoreboard: #1a2e0a;
+  --color-scoreboard-text: #c8e6a0;
+  --color-warning: #d4a017;
+  --color-error: #b22222;
+  --color-gold: #ffd700;
+}
