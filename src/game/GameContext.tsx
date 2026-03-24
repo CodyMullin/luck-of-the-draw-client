@@ -186,6 +186,7 @@ function applyMessage(
         roundNumber: msg.roundNumber,
         draw: msg.draw,
         winnerName: msg.winnerName,
+        winnerGuess: msg.winnerGuess ?? null,
         validPlayers: msg.validPlayers as ReadonlyArray<ValidPlayer>,
         validPlayerCount: msg.validPlayerCount,
         nextRoundIn: msg.nextRoundIn,

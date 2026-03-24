@@ -11,6 +11,7 @@ export interface RoundResult {
   readonly roundNumber: number;
   readonly draw: Extract<ServerMessage, { type: "round:end" }>["draw"];
   readonly winnerName: string | null;
+  readonly winnerGuess: ValidPlayer | null;
   readonly validPlayers: ReadonlyArray<ValidPlayer>;
   readonly validPlayerCount: number;
   readonly nextRoundIn: number;
