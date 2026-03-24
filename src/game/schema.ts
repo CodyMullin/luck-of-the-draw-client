@@ -101,6 +101,7 @@ const RoundEnd = Schema.Struct({
   draw: Draw,
   winnerId: Schema.NullOr(Schema.Number),
   winnerName: Schema.NullOr(Schema.String),
+  winnerGuess: Schema.optionalWith(Schema.NullOr(ValidPlayer), { default: () => null }),
   validPlayers: Schema.Array(ValidPlayer),
   validPlayerCount: Schema.Number,
   scoreboard: Schema.Array(ScoreEntry),

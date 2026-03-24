@@ -188,6 +188,11 @@ function RoundResultView() {
               <p className="mt-1 font-display text-3xl font-bold text-gold">
                 {result.winnerName}
               </p>
+              {result.winnerGuess && (
+                <p className="mt-1 font-display text-sm text-scoreboard-text/60">
+                  Guessed: {result.winnerGuess.nameFirst} {result.winnerGuess.nameLast}
+                </p>
+              )}
             </>
           ) : (
             <p className="font-display text-xl text-scoreboard-text/60">Time's up! No winner.</p>
